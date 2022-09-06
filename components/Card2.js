@@ -6,31 +6,37 @@ import comment from "../assets/icons/comment-bubble.svg";
 import bookmark from "../assets/icons/bookmark.svg";
 import more from "../assets/icons/more.png";
 
+import styles from "./Card2.module.css"
+
 const Card2 = () => {
   return (
-    <div className="card">
-      <div className="card_container">
-        <span className="card_date"></span>
-        <div className="card_icons" style={{ backgroundColor: "black" }}>
+    <div className={styles.card}>
+      <div className={styles.cardContainer}>
+        <span className={styles.date}></span>
+        <div className={styles.iconsMenu}>
+          <img src={bookmark} alt="heart" />
           <img src={heart} alt="heart" />
           <img src={comment} alt="comment" />
-          <img src={bookmark} alt="heart" />
         </div>
+
+
       </div>
-      <div className="card_body">
-        <div className="card_header">
-          <p className="card_author">Jane Doe</p>
-          <span className="show_menu">
+      <div className={styles.cardBody}>
+        <div className={styles.header}>
+          <p className={styles.author}>Jane Doe</p>
+          <span className={styles.menu}>
             <img src={more} alt="more" />
           </span>
         </div>
 
-        <h2 className="card_title">
+        <h2 className={styles.title}>
           Boxing icon has the will for a couple more fights
         </h2>
-        <p className="card_description">
-          The highly anticipated world championship fight will take place at
-          10am and is the second major boxing blockbuster in the nation after 43
+        <p className={styles.description}>
+          The highly anticipated world championship
+           fight will take place at
+          10am and is the second major
+           boxing blockbuster in the nation after 43
           years.
         </p>
       </div>

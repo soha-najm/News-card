@@ -1,0 +1,11 @@
+.card{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: black 1px solid;
+    min-height: 540px;
+    background:url("../assets/images/stranger-things.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
