@@ -1,12 +1,79 @@
 .card{
+    /* min-height: 540px; */
     position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    border: black 1px solid;
-    min-height: 540px;
+    height: 500px ;
+    width: 400px ;
     background:url("../assets/images/stranger-things.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    flex: 1;
+    color: white;
+    -webkit-box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38); 
+    box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38);
+
+
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.date{
+    color: white;
+}
+
+.iconsMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+
+}
+
+.iconsMenu img{
+    height: 24px;
+
+}
+
+.body{
+    box-shadow: 0 5px 30px 10px rgba(black, 0.3);
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right:10px ;
+
+
+
+}
+
+.author{
+    font-size: 12px;
+
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+.more{
+    text-align: center;
+}
+.more a{
+text-decoration: none;
+color: white;
+
+}
+
+
+.arrow {
+    font-size: 15px;
+
 }

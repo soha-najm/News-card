@@ -12,7 +12,11 @@ const Card2 = () => {
   return (
     <div className={styles.card}>
       <div className={styles.cardContainer}>
-        <span className={styles.date}></span>
+        <span className={styles.date}>
+            <span>12</span>
+            <span>AUG</span>
+            <span>2016</span>
+        </span>
         <div className={styles.iconsMenu}>
           <img src={bookmark} alt="heart" />
           <img src={heart} alt="heart" />
@@ -20,11 +24,11 @@ const Card2 = () => {
         </div>
 
 
-      </div>
-      <div className={styles.cardBody}>
+    </div>
+    <div className={styles.cardBody}>
         <div className={styles.header}>
           <p className={styles.author}>Jane Doe</p>
-          <span className={styles.menu}>
+          <span className={styles.menu} >
             <img src={more} alt="more" />
           </span>
         </div>
