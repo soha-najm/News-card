@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React , {useState}from "react";
+
 
 // icons
 import heart from "../assets/icons/heart.png";
@@ -9,6 +11,13 @@ import more from "../assets/icons/more.png";
 import styles from "./Card2.module.css"
 
 const Card2 = () => {
+
+  const [isShown , setIsShown]=useState(false);
+
+  const clickHandler=(event)=>{
+    setIsShown(current => !current);
+  }
+
   return (
     <div className={styles.card}>
       <div className={styles.cardContainer}>
@@ -17,24 +26,31 @@ const Card2 = () => {
             <span>AUG</span>
             <span>2016</span>
         </span>
+
+       
+
+
+    </div>
+    <div className={styles.cardBody}>
+
+        {isShown && ( 
         <div className={styles.iconsMenu}>
           <img src={bookmark} alt="heart" />
           <img src={heart} alt="heart" />
           <img src={comment} alt="comment" />
         </div>
+        )}
 
-
-    </div>
-    <div className={styles.cardBody}>
         <div className={styles.header}>
           <p className={styles.author}>Jane Doe</p>
-          <span className={styles.menu} >
+          <button className={styles.menu} onClick={clickHandler} >
             <img src={more} alt="more" />
-          </span>
-        </div>
+          </button>
+        </div> 
+        
 
         <h2 className={styles.title}>
-          Boxing icon has the will for a couple more fights
+          <a href="#">Boxing icon has the will for a couple more fights</a>
         </h2>
         <p className={styles.description}>
           The highly anticipated world championship

@@ -32,7 +32,6 @@ const Card = () => {
                 <p className={styles.more}>
                 <span><a href='#' >Read more
                 <span className={styles.arrow}> → </span></a></span>
-
                 </p>
                 
             </div>
