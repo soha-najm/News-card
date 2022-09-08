@@ -5,10 +5,10 @@ import React , {useState}from "react";
 // icons
 import heart from "../assets/icons/heart.png";
 import comment from "../assets/icons/comment-bubble.svg";
-import bookmark from "../assets/icons/bookmark.svg";
+import bookmark from "../assets/icons/bookmark.png";
 import more from "../assets/icons/more.png";
 
-import styles from "./Card2.module.css"
+import styles from "./Card2.module.scss"
 
 const Card2 = () => {
 
@@ -33,14 +33,11 @@ const Card2 = () => {
     </div>
     <div className={styles.cardBody}>
 
-        {isShown && ( 
-        <div className={styles.iconsMenu}>
-          <img src={bookmark} alt="heart" />
-          <img src={heart} alt="heart" />
-          <img src={comment} alt="comment" />
+    <div className={`${styles.iconsMenu} ${isShown ? styles.visible : styles.hidden}`}>
+    <li><img src={bookmark} alt="bookmark" /></li>
+                    <li className={styles.num}><span>18</span><img src={heart} alt="heart" /></li>
+                    <li className={styles.num}><span>3</span><img src={comment} alt="comment" /></li>
         </div>
-        )}
-
         <div className={styles.header}>
           <p className={styles.author}>Jane Doe</p>
           <button className={styles.menu} onClick={clickHandler} >
@@ -58,6 +55,7 @@ const Card2 = () => {
           10am and is the second major
            boxing blockbuster in the nation after 43
           years.
+          <br/>
         </p>
       </div>
     </div>

@@ -1,0 +1,137 @@
+.card{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-height: 540px ;
+    min-height: 540px;
+    max-width: 400px ;
+    background:url("../assets/images/stranger-things.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    -webkit-box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38); 
+    box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38);
+}
+
+.cardContainer{
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.card:hover{
+   
+    .body{
+        margin-top: 200px;
+    }
+
+    .num span {
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+    
+}
+
+.body{
+    margin-top: 350px;
+    margin-left: 10px;
+    margin-right:10px ;
+    transition: margin-top .3s ease-in-out;
+
+}
+
+
+.date{
+    float: left;
+    color: white;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.iconsMenu{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    
+   
+}
+ .iconsMenu li {
+    list-style: none;
+    display: inline-flex;
+    }
+
+.iconsMenu img{
+    height: 24px;
+
+}
+
+.iconsMenu img:first-child {
+    margin-top: 10px;
+}
+
+.num{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: center;
+}
+
+.num span {
+    transition: all 0.3s;
+    opacity: 0;
+
+}
+
+.author{
+    font-size: 12px;
+
+}
+
+.title a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+
+}
+
+.description{
+    height: 70px;
+    margin: 0px;
+}
+
+.more{
+    text-align: center;   
+}
+
+.more a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 10px;
+
+}
+
+
+.arrow {
+    font-size: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .2s,opacity .2s linear;
+
+}
+
+.more:hover{
+
+    .arrow{
+        visibility: visible;
+        opacity: 1;
+
+    }
+}
+

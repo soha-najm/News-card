@@ -4,7 +4,7 @@ import Card from './Card1';
 import Card2 from './Card2';
 
 // style
-import styles from "./Landing.module.css"
+import styles from "./Landing.module.scss"
 
 
 

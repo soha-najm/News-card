@@ -5,6 +5,7 @@
     overflow: hidden;
     box-sizing: border-box;
     max-height: 540px ;
+    min-height: 540px;
     max-width: 400px ;
     background:url("../assets/images/boxer.jpg");
     background-size: cover;
@@ -12,8 +13,14 @@
     background-position: top;
     -webkit-box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38); 
     box-shadow: 5px 14px 15px 5px rgba(0,0,0,0.38);
-
   
+}
+
+.card:hover{
+   
+    .cardBody{
+        margin-top: 280px;
+    }
 }
 
 .date{
@@ -55,18 +62,46 @@ margin-left: 0px;
     width: 100%;
     margin-top: -50px;
     height: 50px;
+    transition: visibility .3s,opacity .2s linear;
+    li{
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    img:first-child{
+        margin-top: 15px;
 
-
+    }
 }
+
+.num {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.visible{
+   visibility: visible;
+   opacity: 1;
+}
+
 .iconsMenu img{
     height: 24px;
     position: relative;
 }
 
 .cardBody{
-    background-color: aliceblue;
+    background-color: white;
     box-shadow: 0 5px 30px 10px rgba(black, 0.3);
     margin-top: 370px;
+    transition: margin-top .3s ease-in-out;
+    padding-bottom: 200px;
 
 
 }
@@ -110,3 +145,7 @@ margin-left: 0px;
 
 }
 
+.menu{
+    border: none;
+    background-color: white;
+}
